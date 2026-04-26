@@ -21,6 +21,7 @@ import MapKit
 struct NewEntryView: View {
     @Environment(\.modelContext) private var modelContext
     @StateObject private var location = LocationManager()
+    @Binding var selectedTab: AppTab
 
     @State private var title: String = ""
     @State private var note: String = ""
@@ -33,7 +34,8 @@ struct NewEntryView: View {
     @State private var showingCamera = false
     @State private var pickerItem: PhotosPickerItem?
 
-    @State private var saveCompleted = false
+    enum Field: Hashable { case title, note }
+    @FocusState private var focusedField: Field?
 
     var body: some View {
         AppShell {
@@ -41,6 +43,9 @@ struct NewEntryView: View {
                 Section("Title") {
                     TextField("Title this entry", text: $title)
                         .textInputAutocapitalization(.sentences)
+                        .focused($focusedField, equals: .title)
+                        .submitLabel(.next)
+                        .onSubmit { focusedField = .note }
                 }
 
                 Section("Photo") {
@@ -75,6 +80,7 @@ struct NewEntryView: View {
                 Section("Note") {
                     TextEditor(text: $note)
                         .frame(minHeight: 120)
+                        .focused($focusedField, equals: .note)
                 }
 
                 Section("Stamp") {
@@ -124,6 +130,21 @@ struct NewEntryView: View {
             }
             .navigationTitle("New Entry")
             .toolbarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Cancel") {
+                        focusedField = nil
+                        reset()
+                        selectedTab = .log
+                    }
+                }
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") {
+                        focusedField = nil
+                    }
+                }
+            }
             .task {
                 location.requestAuthorizationIfNeeded()
             }
@@ -153,11 +174,7 @@ struct NewEntryView: View {
                     pickerItem = nil
                 }
             }
-            .alert("Saved", isPresented: $saveCompleted) {
-                Button("OK") { reset() }
-            } message: {
-                Text("Your entry was saved. Open the Log tab to see it.")
-            }
+            .scrollDismissesKeyboard(.interactively)
         }
     }
 
@@ -218,14 +235,23 @@ struct NewEntryView: View {
                 let snapshot = try await WeatherFetcher.fetch(at: location)
                 weather = snapshot
             } catch {
-                weatherError = "Could not fetch weather: \(error.localizedDescription)"
+                weatherError = friendlyError(error)
             }
             fetchingWeather = false
         }
     }
 
+    private func friendlyError(_ error: Error) -> String {
+        let raw = error.localizedDescription
+        if raw.contains("JWT") || raw.contains("authservice") || raw.contains("Authenticator") {
+            return "Weather service is not yet available on this device. The WeatherKit entitlement may take a few minutes to propagate after enabling it on developer.apple.com. You can still save the entry — the weather field will be left empty."
+        }
+        return "Could not fetch weather: \(raw)"
+    }
+
     private func save() {
         guard let coord = location.lastLocation?.coordinate else { return }
+        focusedField = nil
         let log = OutsideLog(
             timestamp: Date(),
             title: title.trimmingCharacters(in: .whitespaces),
@@ -238,7 +264,9 @@ struct NewEntryView: View {
             note: note
         )
         modelContext.insert(log)
-        saveCompleted = true
+        try? modelContext.save()
+        reset()
+        selectedTab = .log
     }
 
     private func reset() {
@@ -251,6 +279,6 @@ struct NewEntryView: View {
 }
 
 #Preview {
-    NewEntryView()
+    NewEntryView(selectedTab: .constant(.newEntry))
         .modelContainer(for: OutsideLog.self, inMemory: true)
 }
