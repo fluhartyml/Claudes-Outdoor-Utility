@@ -86,21 +86,9 @@ struct AboutView: View {
                         .padding(.horizontal)
                         .padding(.top, 12)
 
-                    VStack(spacing: 6) {
-                        HStack(spacing: 6) {
-                            Image(systemName: "cloud.sun.fill")
-                                .foregroundStyle(.secondary)
-                            Text("Weather data from")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                            Link("Apple Weather", destination: URL(string: "https://weatherkit.apple.com/legal-attribution.html")!)
-                                .font(.caption)
-                        }
-                        Text("Other data sources are listed on the linked legal-attribution page.")
-                            .font(.caption2)
-                            .foregroundStyle(.tertiary)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 32)
+                    Link(destination: URL(string: "https://weatherkit.apple.com/legal-attribution.html")!) {
+                        Text("Weather data provided by \u{F8FF} Weather")
+                            .font(.caption)
                     }
                     .padding(.top, 8)
 
