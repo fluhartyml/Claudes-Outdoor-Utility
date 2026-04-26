@@ -32,6 +32,7 @@ struct NewEntryView: View {
 
     @State private var showingPhotoOptions = false
     @State private var showingCamera = false
+    @State private var showingPhotoLibrary = false
     @State private var pickerItem: PhotosPickerItem?
 
     enum Field: Hashable { case title, note }
@@ -156,9 +157,12 @@ struct NewEntryView: View {
                 Button("Take Photo") {
                     showingCamera = true
                 }
-                PhotosPicker("Choose from Library", selection: $pickerItem, matching: .images)
+                Button("Choose from Library") {
+                    showingPhotoLibrary = true
+                }
                 Button("Cancel", role: .cancel) {}
             }
+            .photosPicker(isPresented: $showingPhotoLibrary, selection: $pickerItem, matching: .images)
             .sheet(isPresented: $showingCamera) {
                 CameraPicker { data in
                     photoData = data
