@@ -1,0 +1,27 @@
+# Xcode user-specific
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+
+# Build products
+build/
+DerivedData/
+*.app
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods (unused, but defensive)
+Pods/
+
+# macOS
+.DS_Store
+
+# Other
+*.moved-aside
+*.hmap
+*.ipa

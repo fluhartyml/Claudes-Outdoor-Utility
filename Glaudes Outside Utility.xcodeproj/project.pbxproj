@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C0CAF7772F9E53BA00895DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0CAF75D2F9E53B900895DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CAF7642F9E53B900895DD5;
+			remoteInfo = "Glaudes Outside Utility";
+		};
+		C0CAF7812F9E53BA00895DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0CAF75D2F9E53B900895DD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0CAF7642F9E53B900895DD5;
+			remoteInfo = "Glaudes Outside Utility";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0CAF7652F9E53B900895DD5 /* Glaudes Outside Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glaudes Outside Utility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CAF7762F9E53BA00895DD5 /* Glaudes Outside UtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Glaudes Outside UtilityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CAF7802F9E53BA00895DD5 /* Glaudes Outside UtilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Glaudes Outside UtilityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C0CAF7882F9E53BA00895DD5 /* Exceptions for "Glaudes Outside Utility" folder in "Glaudes Outside Utility" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C0CAF7642F9E53B900895DD5 /* Glaudes Outside Utility */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C0CAF7672F9E53B900895DD5 /* Glaudes Outside Utility */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C0CAF7882F9E53BA00895DD5 /* Exceptions for "Glaudes Outside Utility" folder in "Glaudes Outside Utility" target */,
+			);
+			path = "Glaudes Outside Utility";
+			sourceTree = "<group>";
+		};
+		C0CAF7792F9E53BA00895DD5 /* Glaudes Outside UtilityTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Glaudes Outside UtilityTests";
+			sourceTree = "<group>";
+		};
+		C0CAF7832F9E53BA00895DD5 /* Glaudes Outside UtilityUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Glaudes Outside UtilityUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0CAF7622F9E53B900895DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CAF7732F9E53BA00895DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CAF77D2F9E53BA00895DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0CAF75C2F9E53B900895DD5 = {
+			isa = PBXGroup;
+			children = (
+				C0CAF7672F9E53B900895DD5 /* Glaudes Outside Utility */,
+				C0CAF7792F9E53BA00895DD5 /* Glaudes Outside UtilityTests */,
+				C0CAF7832F9E53BA00895DD5 /* Glaudes Outside UtilityUITests */,
+				C0CAF7662F9E53B900895DD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0CAF7662F9E53B900895DD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0CAF7652F9E53B900895DD5 /* Glaudes Outside Utility.app */,
+				C0CAF7762F9E53BA00895DD5 /* Glaudes Outside UtilityTests.xctest */,
+				C0CAF7802F9E53BA00895DD5 /* Glaudes Outside UtilityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0CAF7642F9E53B900895DD5 /* Glaudes Outside Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CAF7892F9E53BA00895DD5 /* Build configuration list for PBXNativeTarget "Glaudes Outside Utility" */;
+			buildPhases = (
+				C0CAF7612F9E53B900895DD5 /* Sources */,
+				C0CAF7622F9E53B900895DD5 /* Frameworks */,
+				C0CAF7632F9E53B900895DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C0CAF7672F9E53B900895DD5 /* Glaudes Outside Utility */,
+			);
+			name = "Glaudes Outside Utility";
+			packageProductDependencies = (
+			);
+			productName = "Glaudes Outside Utility";
+			productReference = C0CAF7652F9E53B900895DD5 /* Glaudes Outside Utility.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0CAF7752F9E53BA00895DD5 /* Glaudes Outside UtilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CAF78E2F9E53BA00895DD5 /* Build configuration list for PBXNativeTarget "Glaudes Outside UtilityTests" */;
+			buildPhases = (
+				C0CAF7722F9E53BA00895DD5 /* Sources */,
+				C0CAF7732F9E53BA00895DD5 /* Frameworks */,
+				C0CAF7742F9E53BA00895DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0CAF7782F9E53BA00895DD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C0CAF7792F9E53BA00895DD5 /* Glaudes Outside UtilityTests */,
+			);
+			name = "Glaudes Outside UtilityTests";
+			packageProductDependencies = (
+			);
+			productName = "Glaudes Outside UtilityTests";
+			productReference = C0CAF7762F9E53BA00895DD5 /* Glaudes Outside UtilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0CAF77F2F9E53BA00895DD5 /* Glaudes Outside UtilityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0CAF7912F9E53BA00895DD5 /* Build configuration list for PBXNativeTarget "Glaudes Outside UtilityUITests" */;
+			buildPhases = (
+				C0CAF77C2F9E53BA00895DD5 /* Sources */,
+				C0CAF77D2F9E53BA00895DD5 /* Frameworks */,
+				C0CAF77E2F9E53BA00895DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0CAF7822F9E53BA00895DD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C0CAF7832F9E53BA00895DD5 /* Glaudes Outside UtilityUITests */,
+			);
+			name = "Glaudes Outside UtilityUITests";
+			packageProductDependencies = (
+			);
+			productName = "Glaudes Outside UtilityUITests";
+			productReference = C0CAF7802F9E53BA00895DD5 /* Glaudes Outside UtilityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0CAF75D2F9E53B900895DD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					C0CAF7642F9E53B900895DD5 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					C0CAF7752F9E53BA00895DD5 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = C0CAF7642F9E53B900895DD5;
+					};
+					C0CAF77F2F9E53BA00895DD5 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = C0CAF7642F9E53B900895DD5;
+					};
+				};
+			};
+			buildConfigurationList = C0CAF7602F9E53B900895DD5 /* Build configuration list for PBXProject "Glaudes Outside Utility" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0CAF75C2F9E53B900895DD5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C0CAF7662F9E53B900895DD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0CAF7642F9E53B900895DD5 /* Glaudes Outside Utility */,
+				C0CAF7752F9E53BA00895DD5 /* Glaudes Outside UtilityTests */,
+				C0CAF77F2F9E53BA00895DD5 /* Glaudes Outside UtilityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0CAF7632F9E53B900895DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CAF7742F9E53BA00895DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CAF77E2F9E53BA00895DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0CAF7612F9E53B900895DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CAF7722F9E53BA00895DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CAF77C2F9E53BA00895DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0CAF7782F9E53BA00895DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CAF7642F9E53B900895DD5 /* Glaudes Outside Utility */;
+			targetProxy = C0CAF7772F9E53BA00895DD5 /* PBXContainerItemProxy */;
+		};
+		C0CAF7822F9E53BA00895DD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0CAF7642F9E53B900895DD5 /* Glaudes Outside Utility */;
+			targetProxy = C0CAF7812F9E53BA00895DD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C0CAF78A2F9E53BA00895DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Glaudes Outside Utility/Glaudes_Outside_Utility.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Glaudes Outside Utility/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Claudes-X26-Swift-Bible.Glaudes-Outside-Utility";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0CAF78B2F9E53BA00895DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Glaudes Outside Utility/Glaudes_Outside_Utility.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Glaudes Outside Utility/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Claudes-X26-Swift-Bible.Glaudes-Outside-Utility";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0CAF78C2F9E53BA00895DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0CAF78D2F9E53BA00895DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0CAF78F2F9E53BA00895DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Claudes-X26-Swift-Bible.Glaudes-Outside-UtilityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glaudes Outside Utility.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Glaudes Outside Utility";
+			};
+			name = Debug;
+		};
+		C0CAF7902F9E53BA00895DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Claudes-X26-Swift-Bible.Glaudes-Outside-UtilityTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glaudes Outside Utility.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Glaudes Outside Utility";
+			};
+			name = Release;
+		};
+		C0CAF7922F9E53BA00895DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Claudes-X26-Swift-Bible.Glaudes-Outside-UtilityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Glaudes Outside Utility";
+			};
+			name = Debug;
+		};
+		C0CAF7932F9E53BA00895DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X3F6UJ44H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Claudes-X26-Swift-Bible.Glaudes-Outside-UtilityUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Glaudes Outside Utility";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0CAF7602F9E53B900895DD5 /* Build configuration list for PBXProject "Glaudes Outside Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CAF78C2F9E53BA00895DD5 /* Debug */,
+				C0CAF78D2F9E53BA00895DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CAF7892F9E53BA00895DD5 /* Build configuration list for PBXNativeTarget "Glaudes Outside Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CAF78A2F9E53BA00895DD5 /* Debug */,
+				C0CAF78B2F9E53BA00895DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CAF78E2F9E53BA00895DD5 /* Build configuration list for PBXNativeTarget "Glaudes Outside UtilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CAF78F2F9E53BA00895DD5 /* Debug */,
+				C0CAF7902F9E53BA00895DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0CAF7912F9E53BA00895DD5 /* Build configuration list for PBXNativeTarget "Glaudes Outside UtilityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0CAF7922F9E53BA00895DD5 /* Debug */,
+				C0CAF7932F9E53BA00895DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0CAF75D2F9E53B900895DD5 /* Project object */;
+}
