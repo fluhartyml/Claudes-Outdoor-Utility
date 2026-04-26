@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Claudes Outdoor Utility uses your location to stamp each journal entry with where it happened and to render your past entries pinned on a map.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Claudes Outdoor Utility uses the camera when you choose Take Photo while creating a journal entry.</string>
 </dict>
 </plist>
