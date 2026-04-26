@@ -2,7 +2,12 @@
 //  Claudes_Outdoor_UtilityApp.swift
 //  Claudes Outdoor Utility
 //
-//  Created by Michael Fluharty on 4/26/26.
+//  ── Under the Hood ──────────────────────────────────────────────
+//  App entry. WindowGroup hosting ContentView. Single SwiftData
+//  ModelContainer for OutsideLog — the only persistent type the
+//  app stores. Quiet by design: every feature tab owns its own
+//  state, so the entry has nothing to coordinate beyond the model
+//  container.
 //
 
 import SwiftUI
@@ -10,23 +15,10 @@ import SwiftData
 
 @main
 struct Claudes_Outdoor_UtilityApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(for: OutsideLog.self)
     }
 }

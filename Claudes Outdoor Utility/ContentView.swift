@@ -2,60 +2,30 @@
 //  ContentView.swift
 //  Claudes Outdoor Utility
 //
-//  Created by Michael Fluharty on 4/26/26.
+//  ── Under the Hood ──────────────────────────────────────────────
+//  Root TabView shell. Four tabs: Home (map of past entries),
+//  New Entry (capture flow), Log (chronological list), Under the
+//  Hood (source tour). Each tab body is wrapped in AppShell so the
+//  (i) info button + About sheet plumbing is shared once.
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+        TabView {
+            HomeView()
+                .tabItem { Label("Home", systemImage: "map") }
+            NewEntryView()
+                .tabItem { Label("New Entry", systemImage: "plus.app") }
+            LogView()
+                .tabItem { Label("Log", systemImage: "list.bullet.rectangle") }
+            UnderTheHoodView()
+                .tabItem { Label("Under the Hood", systemImage: "wrench.and.screwdriver") }
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
