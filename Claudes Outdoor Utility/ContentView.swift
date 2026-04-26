@@ -17,7 +17,7 @@ import SwiftData
 enum AppTab: Hashable { case home, newEntry, log, underTheHood }
 
 struct ContentView: View {
-    @State private var selectedTab: AppTab = .newEntry
+    @State private var selectedTab: AppTab = .home
 
     var body: some View {
         TabView(selection: $selectedTab) {

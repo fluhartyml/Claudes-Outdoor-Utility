@@ -21,6 +21,9 @@ struct EntryDetailView: View {
     let log: OutsideLog
 
     @State private var showingDeleteConfirm = false
+    @State private var showingShare = false
+    @State private var shareItems: [Any] = []
+    @State private var preparingShare = false
 
     var body: some View {
         ScrollView {
@@ -81,6 +84,13 @@ struct EntryDetailView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
+                    Button {
+                        prepareAndShare()
+                    } label: {
+                        Label("Share Entry", systemImage: "square.and.arrow.up")
+                    }
+                    .disabled(preparingShare)
+                    Divider()
                     Button(role: .destructive) {
                         showingDeleteConfirm = true
                     } label: {
@@ -90,6 +100,9 @@ struct EntryDetailView: View {
                     Image(systemName: "ellipsis.circle")
                 }
             }
+        }
+        .sheet(isPresented: $showingShare) {
+            ActivityShareSheet(items: shareItems)
         }
         .alert("Delete Entry?", isPresented: $showingDeleteConfirm) {
             Button("Delete", role: .destructive) {
@@ -110,5 +123,17 @@ struct EntryDetailView: View {
 
     private var coordinatesDisplay: String {
         String(format: "%.4f, %.4f", log.latitude, log.longitude)
+    }
+
+    private func prepareAndShare() {
+        preparingShare = true
+        Task {
+            let items = await EntryShareBuilder.buildItems(for: log)
+            await MainActor.run {
+                shareItems = items
+                preparingShare = false
+                showingShare = true
+            }
+        }
     }
 }
