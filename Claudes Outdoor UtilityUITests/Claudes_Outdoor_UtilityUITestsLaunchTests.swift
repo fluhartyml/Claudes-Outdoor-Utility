@@ -1,13 +1,13 @@
 //
-//  Glaudes_Outside_UtilityUITestsLaunchTests.swift
-//  Glaudes Outside UtilityUITests
+//  Claudes_Outdoor_UtilityUITestsLaunchTests.swift
+//  Claudes Outdoor UtilityUITests
 //
 //  Created by Michael Fluharty on 4/26/26.
 //
 
 import XCTest
 
-final class Glaudes_Outside_UtilityUITestsLaunchTests: XCTestCase {
+final class Claudes_Outdoor_UtilityUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

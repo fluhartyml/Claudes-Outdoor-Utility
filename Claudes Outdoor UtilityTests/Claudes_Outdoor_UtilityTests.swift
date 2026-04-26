@@ -1,14 +1,14 @@
 //
-//  Glaudes_Outside_UtilityTests.swift
-//  Glaudes Outside UtilityTests
+//  Claudes_Outdoor_UtilityTests.swift
+//  Claudes Outdoor UtilityTests
 //
 //  Created by Michael Fluharty on 4/26/26.
 //
 
 import Testing
-@testable import Glaudes_Outside_Utility
+@testable import Claudes_Outdoor_Utility
 
-struct Glaudes_Outside_UtilityTests {
+struct Claudes_Outdoor_UtilityTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

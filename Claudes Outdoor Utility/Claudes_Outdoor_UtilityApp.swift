@@ -1,6 +1,6 @@
 //
-//  Glaudes_Outside_UtilityApp.swift
-//  Glaudes Outside Utility
+//  Claudes_Outdoor_UtilityApp.swift
+//  Claudes Outdoor Utility
 //
 //  Created by Michael Fluharty on 4/26/26.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Glaudes_Outside_UtilityApp: App {
+struct Claudes_Outdoor_UtilityApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,

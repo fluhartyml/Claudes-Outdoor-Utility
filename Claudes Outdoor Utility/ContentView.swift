@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Glaudes Outside Utility
+//  Claudes Outdoor Utility
 //
 //  Created by Michael Fluharty on 4/26/26.
 //

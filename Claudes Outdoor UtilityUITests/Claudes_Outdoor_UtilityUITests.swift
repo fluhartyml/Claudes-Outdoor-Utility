@@ -1,13 +1,13 @@
 //
-//  Glaudes_Outside_UtilityUITests.swift
-//  Glaudes Outside UtilityUITests
+//  Claudes_Outdoor_UtilityUITests.swift
+//  Claudes Outdoor UtilityUITests
 //
 //  Created by Michael Fluharty on 4/26/26.
 //
 
 import XCTest
 
-final class Glaudes_Outside_UtilityUITests: XCTestCase {
+final class Claudes_Outdoor_UtilityUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
